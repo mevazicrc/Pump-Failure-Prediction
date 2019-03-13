@@ -3,8 +3,8 @@ cwd = os.getcwd()
 import pickle
 import numpy as np
 import pandas as pd
-from failure_load_functions import RMT_PKLs_toDict, filter_for_failures
-from cardData_Model import enumerate_cards_prll
+from source.failure_load_functions import RMT_PKLs_toDict, filter_for_failures
+from source.cardData_Model import enumerate_cards_prll
 
 from multiprocessing import cpu_count, Pool
 import  cProfile

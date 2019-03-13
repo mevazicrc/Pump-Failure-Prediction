@@ -5,7 +5,7 @@ import pickle
 import gc
 import os
 from multiprocessing import cpu_count, Pool
-from failure_consolidate_data_prll  import consolidate_failure_dataset_prll
+from source.failure_consolidate_data_prll  import consolidate_failure_dataset_prll
 
 cwd = os.getcwd()
 

@@ -2,10 +2,7 @@ import numpy as np
 import pandas as pd
 import pickle
 import matplotlib
-import matplotlib.pyplot as plt
-import os
-from sys import getsizeof
-import gc
+
 
 font = {'family': 'normal',
         'weight': 'bold',
@@ -19,8 +16,8 @@ pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
 
-from failure_load_control import filterFailures_and_getWellsegments, segmented_consolidate_data
-from failure_featureEngineering import featureEng_fail_data
+from source.failure_load_control import filterFailures_and_getWellsegments, segmented_consolidate_data
+from source.failure_featureEngineering import featureEng_fail_data
 
 
 def prepare_train_data(RMT, data_dir, start_date, end_date,  failureDataSetName):

@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import pickle
 
-from failure_preprocessing import add_card_features_prll
+from source.failure_preprocessing import add_card_features_prll
 
 
 def clean_events_filter_time(event_data,  year_min):
