@@ -115,8 +115,8 @@ def prepare_train_data(RMT, data_dir, start_date, end_date,  failureDataSetName)
                      'min_daysOfData': 10,
                      'parallel_run': True}
 
-    time_res_pars = {'freq': '1D',
-                     'interp_tol': '3day'}
+    # time_res_pars = {'freq': '1D',
+    #                  'interp_tol': '3day'}
 
     # Change data resolution
     timeRes_pars = {'data_dir': data_dir,

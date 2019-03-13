@@ -1,7 +1,5 @@
 
 
-from source.failure_machine_learning import filterSegs_and_getTrainTest, modelFit, training_evaluation
-
 import copy, pickle
 
 import matplotlib
@@ -25,7 +23,9 @@ from source.failure_machine_learning import  (get_target_vector, extract_segment
 									   plot_binary_metrics, predict_failure_model,
 									   test_failure_model)
 
-from keras.models import Sequential
+# from keras.models import Sequential
+
+from source.failure_machine_learning import filterSegs_and_getTrainTest, modelFit, training_evaluation
 
 def deploy_failure_model(trained_model, model_pars, deploy_opts, date_lim, future_fails):
 
